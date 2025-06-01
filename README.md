@@ -23,6 +23,10 @@ Special thanks to the following people for their PR contributions to the origina
 
 Your pull requests to the original repository were very valuable and much appreicated. Thank you!
 
+As a general note, the version uses `bun` as the package manager. You can use `npm` or `yarn` if you prefer, but `bun` is the default.
+
+We also require PHP 8.3, it seems that 8.4 has issues with code coverage reporting. Once these issues are resolved we'll update the mandatory PHP version to 8.4.
+
 ## Installation
 
 Clone the repo locally:
@@ -41,13 +45,19 @@ composer install
 Install NPM dependencies:
 
 ```sh
-npm ci
+bun i
 ```
 
 Build assets:
 
 ```sh
-npm run dev
+bun run dev
+```
+
+For updating node and composer dependencies::
+
+```sh
+bun run cb
 ```
 
 Setup configuration:
