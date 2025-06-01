@@ -42,16 +42,22 @@ Install PHP dependencies:
 composer install
 ```
 
-Install NPM dependencies:
+Install Node dependencies:
 
 ```sh
 bun i
 ```
 
-Build assets:
+Start the dev server:
 
 ```sh
 bun run dev
+```
+
+Build production assets:
+
+```sh
+bun run build
 ```
 
 For updating node and composer dependencies::
